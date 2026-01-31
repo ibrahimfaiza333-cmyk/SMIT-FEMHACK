@@ -1,0 +1,56 @@
+/* Accordion item glass effect */
+.custom-accordion .accordion-item {
+  background: rgba(128, 128, 128, 0.2); /* grey + transparent */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+@font-face {
+    font-family:customfont;
+    src: url(/ClashDisplay-Regular.otf);
+}
+body{
+    font-family: customfont;
+}
+/* Button background (same in open & close) */
+.custom-accordion .accordion-button {
+  background: transparent !important;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* Remove default active background */
+.custom-accordion .accordion-button:not(.collapsed) {
+  background: transparent !important;
+  color: #fff;
+  box-shadow: none;
+}
+
+/* Arrow icon color */
+.custom-accordion .accordion-button::after {
+  filter: invert(1);
+}
+
+/* Body text */
+.custom-accordion .accordion-body {
+  background: transparent;
+  color: #e0e0e0;
+}
+
+/* Remove white border */
+.custom-accordion .accordion-item,
+.custom-accordion .accordion-header {
+  border: none;
+}
+
+body{
+  background: #A734BD;
+background: linear-gradient(112deg, rgba(167, 52, 189, 1) 3%, rgba(255, 0, 106, 1) 12%, rgba(0, 0, 0, 1) 24%);
+}
+.bg-black {
+  background: transparent !important;
+}
